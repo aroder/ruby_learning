@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('slack test') {
       steps {
-        slackSend 'this is a test'
+        slackSend(message: 'this is a test', token: 'TpoLUoJBwuQNWunNDb2ENG1c', teamDomain: 'hotquant', channel: '#project-hq-hqtools')
       }
     }
   }
